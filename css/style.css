@@ -58,6 +58,33 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header ***********/
+header {
+    display : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.logo-booki {
+    max-height: 20px;
+}
+
+nav ul li{
+    display:inline-block;
+    list-style-type: none;
+    margin-left : 30px;
+    padding : 15px 0px 15px 0px; /*A modifier selon les paramètres de ".item-navigation:hover" ci-dessous.*/
+}
+
+.item-navigation:hover {
+    color : #0065FC;
+    border-top: solid 2px #0065FC;
+    padding : 13px 0px 15px 0px; 
+    /* Ce padding top = padding sans le hover - hauteur de la bordure bleu :
+    on évite ainsi le décalage de pixel lors du survol de la souris! A modifier avec précaution*/
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -73,7 +100,44 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 66%;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-flow : row wrap;
+    justify-content :space-evenly;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-flow : column nowrap;
+    align-items:space-evenly;
+    margin-top: 33px;
+    width : 30%;
+}
+
+.hebergements-cards img {
+    height: 124px;
+    width : 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin: 5px 0px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0%;
 }
 
 /****** Populaires ***********/
@@ -164,4 +228,8 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+    .item-navigation:hover {
+        border-bottom: solid 2px #0065FC;
+    }
 }
