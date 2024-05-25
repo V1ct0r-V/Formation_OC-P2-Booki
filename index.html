@@ -8,9 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -22,17 +20,74 @@
             </div>
             <nav>
                 <ul class="liste-navigation">
-                    <li class="item-navigation"><a href="">Hébergements</a></li>
-                    <li class="item-navigation"><a href="">Activités</a></li>
+                    <li class="item-navigation"><a href="#nav-hébergements">Hébergements</a></li>
+                    <li class="item-navigation"><a href="#nav-activités">Activités</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
+            <div class="info-group">
+                <div class="headline">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p class="website-subtitle">En plein centre-ville ou en pleine nature</p>
+                </div>
+
+                <form action="www.URLTraitantEnvoiDuFormulaire.com" method="get">
+                    <div class="location-dot">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    </div>
+                    <input class="search-text" type="search" name="recherche" id="recherche"
+                        placeholder="Marseille, France">
+                    <input class="button-text" type="submit" value="Rechercher">
+                    <button class="button-icon">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    </button>
+                </form>
+
+                <div class="filter-bar">
+                    <h3 class="filter-bar-title">Filtres</h3>
+                    <ul class="filter-bar-list">
+                        <li class="filter-bar-item">
+                            <a href="">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                Économique
+                            </a>
+                        </li>
+
+                        <li class="filter-bar-item">
+                            <a href="">
+                                <i class="fa-solid fa-person"></i>
+                                Familial
+                            </a>
+                        </li>
+
+                        <li class="filter-bar-item">
+                            <a href="">
+                                <i class="fa-solid fa-heart"></i>
+                                Romantique
+                            </a>
+                        </li>
+
+                        <li class="filter-bar-item">
+                            <a href="">
+                                <i class="fa-solid fa-fire"></i>
+                                Nos pépites
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info-bar">
+                    <p><i class="fa-solid fa-circle-info"></i> Plus de 500 logements sont disponibles dans cette ville
+                    </p>
+                </div>
+            </div>
+
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="hebergements-title">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
+                        <h2 id="nav-hébergements" class="section-title" >Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
                         <article class="card">
@@ -143,7 +198,6 @@
                             </a>
                         </article>
 
-
                         <article class="card">
                             <a href="#">
                                 <img src="./images/hebergements/nicate-lee.jpg"
@@ -166,8 +220,10 @@
                         </article>
 
                     </div>
-                    <div class="afficher-plus">
-                        <h3>Afficher plus</h3>
+                    <div>
+                        <a href="#">
+                            <h3 class="afficher-plus">Afficher plus</h3>
+                        </a>
                     </div>
                 </section>
 
@@ -240,9 +296,78 @@
                     </div>
                 </section>
             </div>
+
+            <section class="activités">
+                <div class="activités-title">
+                    <h2 id="nav-activités">Activités à Marseille</h2>
+                </div>
+                <div class="activités-card">
+                    <article class="card">
+                        <a href="">
+                            <img class="card-image" src="/images/activites/reno-laithienne.jpg"
+                                alt="Image de l'activité">
+                            <div class="card-content">
+                                <h3 class="card-title">Vieux-Port</h3>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="card">
+                        <a href="">
+                            <img class="card-image" src="/images/activites/paul-hermann.jpg" alt="Image de l'activité">
+                            <div class="card-content">
+                                <h3 class="card-title">Fort de Pomègues</h3>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="card">
+                        <a href="">
+                            <img class="card-image" src="/images/activites/kilyan-sockalingum.jpg"
+                                alt="Image de l'activité">
+                                <div class="card-content">
+                                    <h3 class="card-title">Parc national des Calanques</h3>
+                                </div>
+                        </a>
+                    </article>
+
+                    <article class="card">
+                        <a href="">
+                            <img class="card-image" src="/images/activites/florian-wehde.jpg" alt="Image de l'activité">
+                            <div class="card-content">
+                                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
         </main>
 
         <footer>
+            <div class="footer-block">
+                <h3 class="footer-title">À propos</h3>
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="">Fonctionnement du site</a></li>
+                    <li class="footer-item"><a href="">Conditions générales</a></li>
+                    <li class="footer-item"><a href="">Données et confidentialité</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-block">
+                <h3 class="footer-title">Nos hébergements</h3>
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="">Charte qualité</a></li>
+                    <li class="footer-item"><a href="">Proposer votre hôtel</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-block">
+                <h3 class="footer-title">Assistance</h3>
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="">Centre d'aide</a></li>
+                    <li class="footer-item"><a href="">Nous contacter</a></li>
+                </ul>
+            </div>
         </footer>
     </div>
 </body>
