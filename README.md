@@ -14,7 +14,7 @@ Un site pour rechercher des hébergements et des activités dans une ville de vo
 1. **Cloner le dépôt** :
 
    ```bash
-   git clone https://github.com/votre-repo/booki.git
+   git clone https://github.com/V1ct0r-V/Formation_OC-P2-Booki
    cd booki
    ```
 
